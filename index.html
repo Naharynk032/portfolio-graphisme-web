@@ -3,20 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio - Design et Développement</title>
+  <meta name="description" content="Portfolio de Nahary, Graphiste et Développeur Web">
+  <title>Mon Portfolio - Graphisme et Développement Web</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Si vous utilisez un fichier CSS -->
 </head>
 <body>
+
+  <!-- En-tête -->
   <header>
-    <h1>Bienvenue sur mon Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <section>
-      <h2>Mes projets</h2>
-      <p>Ici vous trouverez mes projets de design et de développement web.</p>
-    </section>
-  </main>
+
+  <!-- Section "À propos" -->
+  <section id="about">
+    <h1>Bienvenue sur mon Portfolio</h1>
+    <p>Je suis Nahary, un graphiste et développeur web passionné par la création de designs innovants et de sites web fonctionnels.</p>
+  </section>
+
+  <!-- Section "Projets" -->
+  <section id="projects">
+    <h2>Mes Projets</h2>
+    <p>Voici quelques-uns de mes projets de graphisme et de développement web :</p>
+    <ul>
+      <li><a href="https://votre-projet1.com">Projet 1 - Création de logo</a></li>
+      <li><a href="https://votre-projet2.com">Projet 2 - Développement d'un site web</a></li>
+      <li><a href="https://votre-projet3.com">Projet 3 - Application mobile</a></li>
+    </ul>
+  </section>
+
+  <!-- Section "Blog" -->
+  <section id="blog">
+    <h2>Mon Blog</h2>
+    <p>Voici mes derniers articles de blog :</p>
+    <ul>
+      <li><a href="article1.html">Comment créer un site web en 2024</a></li>
+      <li><a href="article2.html">Mes astuces pour un design réussi</a></li>
+      <li><a href="article3.html">Développement Web : les meilleures pratiques</a></li>
+    </ul>
+  </section>
+
+  <!-- Section Contact (optionnel) -->
+  <section id="contact">
+    <h2>Contactez-moi</h2>
+    <p>Vous souhaitez travailler avec moi ou poser une question ? N'hésitez pas à me contacter.</p>
+    <form action="mailto:votre-email@example.com" method="post" enctype="text/plain">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Pied de page -->
   <footer>
-    <p>&copy; 2024 Nahary. Tous droits réservés.</p>
+    <p>&copy; 2024 Nahary Andria. Tous droits réservés.</p>
+    <p><a href="https://www.linkedin.com/in/votre-profil">Mon LinkedIn</a> | <a href="https://github.com/votre-utilisateur">Mon GitHub</a></p>
   </footer>
+
 </body>
 </html>
