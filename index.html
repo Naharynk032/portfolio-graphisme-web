@@ -54,5 +54,23 @@
     <footer>
         <p>&copy; 2024 Nahary Andria. Tous droits réservés.</p>
     </footer>
+    <script>
+    let lastScrollTop = 0; // Variable pour garder une trace du dernier scroll
+    const header = document.querySelector('header'); // Sélectionne l'élément header
+
+    // Événement de défilement
+    window.addEventListener('scroll', function() {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop; // Position actuelle du scroll
+
+        if (currentScroll > lastScrollTop) {
+            // Si on descend la page, cache le header
+            header.classList.add('hidden');
+        } else {
+            // Si on monte la page, affiche le header
+            header.classList.remove('hidden');
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Empêche le défilement négatif
+    });
+    </script>
 </body>
 </html>
