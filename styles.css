@@ -1,33 +1,31 @@
-/* Appliquer la police Poppins à tout le site */
+/* Style de base */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     background-color: #333;
     color: white;
     padding: 10px 0;
-    text-align: center;
-    transition: transform 0.3s ease; /* Transition pour cacher/afficher le header */
-    z-index: 1000; /* S'assurer que le header est au-dessus des autres éléments */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Classe pour cacher le header */
+/* Masquer le header lorsque scrolle vers le bas */
 header.hidden {
-    transform: translateY(-100%); /* Déplace le header hors de la vue */
+    transform: translateY(-100%);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -42,9 +40,8 @@ nav ul li a {
 
 section {
     padding: 20px;
-    margin: 10px;
+    margin-top: 60px; /* Décalage pour le header fixe */
     background-color: white;
-    border-radius: 5px;
 }
 
 footer {
@@ -52,6 +49,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    width: 100%;
-    bottom: 0;
 }
