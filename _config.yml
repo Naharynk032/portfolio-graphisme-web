@@ -1,6 +1,6 @@
-vutitle: Mon Blog
-description: Bienvenue sur mon blog dédié à la création de sites web et au design graphique.
-url: "https://Naharynk032.github.io"
-baseurl: ""
+title: Mon Portfolio
+email: naharynk032@gmail.com
+description: "Un site personnel avec Jekyll"
+baseurl: ""  # Laissez vide si vous ne l'utilisez pas
+url: "https://Naharynk032.github.io"  # Remplacez par l'URL de votre site
 theme: jekyll-theme-cayman
-markdown: kramdown
