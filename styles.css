@@ -8,10 +8,21 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #333;
     color: white;
     padding: 10px 0;
     text-align: center;
+    transition: transform 0.3s ease; /* Transition pour cacher/afficher le header */
+    z-index: 1000; /* S'assurer que le header est au-dessus des autres éléments */
+}
+
+/* Classe pour cacher le header */
+header.hidden {
+    transform: translateY(-100%); /* Déplace le header hors de la vue */
 }
 
 nav ul {
