@@ -1,1 +1,3 @@
-
+User-agent: *
+Allow: /
+Sitemap: https://Naharynk032.github.io/portfolio-graphisme-web/sitemap.xml
